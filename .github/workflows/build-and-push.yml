@@ -30,7 +30,7 @@ jobs:
 
       - name: Build Docker image
         run: |
-          docker build -t ghcr.io/itisme222/comments-pipeline-demo:latest .
+          docker build -t ghcr.io/itisme222/comments-pipeline-demo:latest.
 
       - name: Push Docker image
         run: |

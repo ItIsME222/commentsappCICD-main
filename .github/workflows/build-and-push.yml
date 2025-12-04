@@ -34,4 +34,4 @@ jobs:
 
       - name: Push Docker image
         run: |
-          docker push ghcr.io/${{ github.actor }}/comments-pipeline-demo:latest
+          docker push -t ghcr.io/itisme222/comments-pipeline-demo:latest.

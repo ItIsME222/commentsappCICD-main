@@ -29,9 +29,7 @@ jobs:
           password: ${{ secrets.GHCR_PAT }}
 
       - name: Build Docker image
-        run: |
-          docker build -t ghcr.io/itisme222/comments-pipeline-demo:latest .
+        run: docker build -t ghcr.io/itisme222/comments-pipeline-demo:latest .
 
       - name: Push Docker image
-        run: |
-          docker push ghcr.io/itisme222/comments-pipeline-demo:latest .
+        run: docker push ghcr.io/itisme222/comments-pipeline-demo:latest

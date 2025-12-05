@@ -18,7 +18,7 @@ public class MainController {
     @GetMapping("/")
     public String index(Model model) {
         model.addAttribute("comments", commentsDAO.getComments());
-        return "index";  // resolves to src/main/resources/templates/index.html
+        return "index"; // resolves to src/main/resources/templates/index.html
     }
 
     // Handle the form submission
@@ -29,5 +29,5 @@ public class MainController {
         // PRG pattern: redirect so refresh doesn’t resubmit the form
         return "redirect:/";
     }
- 
+
 }
